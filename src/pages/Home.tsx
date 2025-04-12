@@ -249,14 +249,14 @@ export default function Home() {
             <div className="flex space-x-4">
               <div className="relative w-full h-80">
                 <img
-                  src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
+                  src="/brochures/mahasambhitclinetpdfs/homepageimages/slide-1-small.png"
                   alt="Students in Library"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="relative w-full h-80 mt-12">
                 <img
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+                  src="/brochures/mahasambhitclinetpdfs/homepageimages/slide-1.png"
                   alt="Students Learning"
                   className="w-full h-full object-cover rounded-lg shadow-lg"
                 />

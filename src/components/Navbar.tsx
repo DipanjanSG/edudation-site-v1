@@ -62,10 +62,10 @@ export default function Navbar() {
                 className="flex items-center"
               >
                 <img
-                  src="/mahasamvit-logo.png"
+                  src="/mahasamvit-logo.jpeg"
                   alt="Mahasamvit Logo"
-                  className="h-9 w-auto mr-2"
-                />
+                  className="h-14 w-auto mr-2" // was h-9, now h-14
+                  />
                 <span
                   className={`text-2xl font-bold ${
                     scrolled ? 'text-primary-500' : 'text-white'
