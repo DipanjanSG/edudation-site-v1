@@ -599,7 +599,7 @@ const BrochureModal = ({ isOpen, onClose, category = 'default' }: BrochureModalP
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
         <div className="flex justify-between items-center p-6 border-b">
-          <h2 className="text-2xl font-bold text-orange-900">Download Brochure</h2>
+          <h2 className="text-2xl font-bold text-green-900">Download Brochure</h2>
           <button
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700"
@@ -626,7 +626,7 @@ const BrochureModal = ({ isOpen, onClose, category = 'default' }: BrochureModalP
                 <div className="ml-3 flex-1">
                   <p className="font-medium text-gray-800">{brochure.title}</p>
                   <p className="text-sm text-gray-500">
-                    {!brochure.available && <span className="text-orange-500">Coming Soon</span>}
+                    {!brochure.available && <span className="text-green-500">Coming Soon</span>}
                     {brochure.available && <span className="text-green-500">Available</span>}
                   </p>
                 </div>

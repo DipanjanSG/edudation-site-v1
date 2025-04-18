@@ -33,7 +33,6 @@ export default function Navbar() {
       children: [
         { path: '/global-finance', label: 'Global Finance Education' },
         { path: '/financial-services', label: 'Financial Services' },
-        // { path: '/financial-research', label: 'Financial Research' },
         { path: '/money-research', label: 'Money Research' },
         { path: '/business-consultancy', label: 'Business Consultancy' },
         { path: '/job-consultancy', label: 'Job Consultancy' },
@@ -49,7 +48,7 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       scrolled
         ? 'bg-white/90 backdrop-blur-md shadow-lg'
-        : 'bg-gradient-to-r from-primary-600 via-primary-500 to-primary-400'
+        : 'bg-gradient-to-r from-green-800 via-green-700 to-green-600'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
@@ -64,11 +63,11 @@ export default function Navbar() {
                 <img
                   src="/mahasamvit-logo.jpeg"
                   alt="Mahasamvit Logo"
-                  className="h-14 w-auto mr-2" // was h-9, now h-14
+                  className="h-14 w-auto mr-2"
                   />
                 <span
                   className={`text-2xl font-bold ${
-                    scrolled ? 'text-primary-500' : 'text-white'
+                    scrolled ? 'text-green-700' : 'text-white'
                   } transition-colors duration-300`}
                 >
                   Mahasamvit
@@ -84,7 +83,7 @@ export default function Navbar() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     className={`px-3 py-2 rounded-md text-sm font-medium ${
-                      scrolled ? 'text-gray-700 hover:text-primary-500' : 'text-white hover:text-primary-100'
+                      scrolled ? 'text-black hover:text-green-700' : 'text-black hover:text-white'
                     } transition-colors duration-300`}
                   >
                     {item.label}
@@ -105,7 +104,7 @@ export default function Navbar() {
                         >
                           <Link
                             to={child.path}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-500"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700"
                           >
                             {child.label}
                           </Link>
@@ -124,11 +123,11 @@ export default function Navbar() {
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
                       isActive(item.path)
                         ? scrolled
-                          ? 'text-primary-500 border-b-2 border-primary-500'
-                          : 'text-white border-b-2 border-white'
+                          ? 'text-green-700 border-b-2 border-green-700'
+                          : 'text-black border-b-2 border-black'
                         : scrolled
-                          ? 'text-gray-700 hover:text-primary-500'
-                          : 'text-white hover:text-primary-100'
+                          ? 'text-black hover:text-green-700'
+                          : 'text-black hover:text-white'
                     }`}
                   >
                     {item.label}
@@ -143,7 +142,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-md ${
-                scrolled ? 'text-gray-700 hover:text-primary-500' : 'text-white hover:text-primary-100'
+                scrolled ? 'text-black hover:text-green-700' : 'text-black hover:text-white'
               }`}
             >
               <Menu size={24} />
@@ -165,7 +164,7 @@ export default function Navbar() {
               {navItems.map((item, index) => (
                 item.children ? (
                   <div key={index} className="space-y-1">
-                    <div className="px-3 py-2 text-primary-500 font-medium border-b border-gray-100">
+                    <div className="px-3 py-2 text-green-700 font-medium border-b border-gray-100">
                       {item.label}
                     </div>
                     {item.children.map((child, childIndex) => (
@@ -177,7 +176,7 @@ export default function Navbar() {
                       >
                         <Link
                           to={child.path}
-                          className="block px-3 py-2 text-sm text-gray-600 hover:bg-primary-50 hover:text-primary-500 pl-6"
+                          className="block px-3 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 pl-6"
                           onClick={() => setIsOpen(false)}
                         >
                           {child.label}
@@ -194,8 +193,8 @@ export default function Navbar() {
                   >
                     <Link
                       to={item.path}
-                      className={`block px-3 py-2 text-gray-700 hover:text-primary-500 hover:bg-primary-50 ${
-                        isActive(item.path) ? 'bg-primary-50 text-primary-500' : ''
+                      className={`block px-3 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 ${
+                        isActive(item.path) ? 'bg-green-50 text-green-700' : ''
                       }`}
                       onClick={() => setIsOpen(false)}
                     >

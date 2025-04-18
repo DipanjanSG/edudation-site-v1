@@ -8,9 +8,9 @@ export default {
           50: '#fff8f1',
           100: '#ffecd9',
           200: '#ffd8b4',
-          300: '#ffba81', // Light orange
+          300: '#ffba81', // Light green
           400: '#ff9c4d',
-          500: '#ff7a1a', // Primary orange
+          500: '#ff7a1a', // Primary green
           600: '#ff6600',
           700: '#cc5200',
           800: '#a34200',

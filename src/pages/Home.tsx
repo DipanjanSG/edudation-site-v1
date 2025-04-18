@@ -219,17 +219,17 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - New Orange Background Section */}
-      <div className="relative bg-gradient-to-r from-orange-600 to-orange-400 py-20">
+      {/* Hero Section - New green Background Section */}
+      <div className="relative bg-gradient-to-r from-green-600 to-green-400 py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-white p-8 rounded-lg shadow-xl z-10 border-l-4 border-orange-500">
+            <div className="bg-white p-8 rounded-lg shadow-xl z-10 border-l-4 border-green-500">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-3xl md:text-4xl font-bold text-orange-900 mb-6">
+                <h1 className="text-3xl md:text-4xl font-bold text-green-900 mb-6">
                   BEST COMMERCE, FINANCE AND LEGAL STUDY WITH GLOBAL ASPECTS
                 </h1>
                 <p className="text-gray-700 mb-6">
@@ -240,7 +240,7 @@ export default function Home() {
                 </p>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
+                  className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
                 >
                   Know More <ArrowRight className="ml-2" />
                 </Link>
@@ -267,7 +267,7 @@ export default function Home() {
       </div>
 
       {/* Education Section */}
-      <section className="py-20 bg-orange-50">
+      <section className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -275,7 +275,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               className="mb-12"
             >
-              <h2 className="text-3xl font-bold mb-6 text-orange-900">Education</h2>
+              <h2 className="text-3xl font-bold mb-6 text-green-900">Education</h2>
               <p className="text-gray-700 mb-8">
                 Cramming for a big exam can put you under a lot of pressure. This practice can also increase your chances of forgetting almost everything you have studied the night before, especially when you fail to have enough sleep.
               </p>
@@ -283,7 +283,7 @@ export default function Home() {
                 This only means that you must change your study habits and focus on what really matters – preparing before exams. Aside from organizing your preparations for the exam, it would help if you remained consistent with your study time and habits. No matter how busy you are as a student, spending time preparing for important tests is a must!
               </p>
 
-              <h3 className="text-2xl font-bold mb-6 text-orange-800">Services</h3>
+              <h3 className="text-2xl font-bold mb-6 text-green-800">Services</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 {careerServices.map((service, index) => (
                   <motion.div
@@ -291,7 +291,7 @@ export default function Home() {
                     whileHover={{ y: -5 }}
                     className="bg-white p-4 rounded-lg shadow-md"
                   >
-                    <h4 className="font-semibold text-orange-700">{service}</h4>
+                    <h4 className="font-semibold text-green-700">{service}</h4>
                   </motion.div>
                 ))}
               </div>
@@ -320,15 +320,15 @@ export default function Home() {
             animate={{ opacity: 1 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-orange-900">MAHASAMVIT FINANCIAL SERVICES</h2>
+            <h2 className="text-3xl font-bold text-green-900">MAHASAMVIT FINANCIAL SERVICES</h2>
             <p className="text-gray-600 mt-4">Comprehensive financial solutions for your success</p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12 mt-12">
-            <div className="bg-orange-50 p-8 rounded-lg shadow-lg">
+            <div className="bg-green-50 p-8 rounded-lg shadow-lg">
               <div className="flex items-start">
                 <div className="flex-1">
-                  <h3 className="text-2xl font-semibold mb-4 text-orange-800">Research Desk</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-green-800">Research Desk</h3>
                   <p className="text-gray-700">
                     Our research is known to be the best in the Indian financial industry. The Research Desk is comprised of dedicated teams for technical and fundamental research, conducting painstaking research to beat the market time and again. The lab has internally developed analytical tools and models that have consistently provided clients an edge over the market. The findings of the research team take shape in the form of our various daily, monthly and quarterly; fundamental & technical research reports.
                   </p>
@@ -342,10 +342,10 @@ export default function Home() {
             </div>
 
             <div className="space-y-6">
-              <div className="bg-orange-50 p-6 rounded-lg shadow-md">
+              <div className="bg-green-50 p-6 rounded-lg shadow-md">
                 <div className="flex items-start">
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-3 text-orange-800">Customer Connect Cell</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-green-800">Customer Connect Cell</h3>
                     <p className="text-gray-700">
                       The PL Customer Connect Cell is a 24×7, one stop place for clients to address all operational issues. It has been set up with the aim of streamlining all our processes and to ensure that we satisfy all the requirements of our clients.
                     </p>
@@ -358,9 +358,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-lg shadow-md">
+              <div className="bg-green-50 p-6 rounded-lg shadow-md">
                 <div className="flex items-start mb-4">
-                  <h3 className="text-xl font-semibold text-orange-800">Multiple Trading Modes</h3>
+                  <h3 className="text-xl font-semibold text-green-800">Multiple Trading Modes</h3>
                   <img
                     src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=100&h=100"
                     alt="Trading"
@@ -369,15 +369,15 @@ export default function Home() {
                 </div>
                 <ul className="space-y-4">
                   <li>
-                    <p className="font-semibold text-orange-700">Offline Trading:</p>
+                    <p className="font-semibold text-green-700">Offline Trading:</p>
                     <p className="text-gray-700">Will offer soon trading through its widespread network of franchisees and partners across the length and breadth of the country. A dedicated advisory desk is constantly involved in addressing clients' queries pertaining to the entire gamut products and solutions that we offer. This is backed by state-of-the-art technological infrastructure at all our branches.</p>
                   </li>
                   <li>
-                    <p className="font-semibold text-orange-700">Online Trading:</p>
+                    <p className="font-semibold text-green-700">Online Trading:</p>
                     <p className="text-gray-700">A complete platform offering online trading in Equity, Derivatives, Commodity, Currency, & IPO's, ready with various tools that empower you to closely monitor your financial growth.</p>
                   </li>
                   <li>
-                    <p className="font-semibold text-orange-700">Mobile Trading:</p>
+                    <p className="font-semibold text-green-700">Mobile Trading:</p>
                     <p className="text-gray-700">We offer its customers the convenience of mobile trading which allows you to take decisions on buying and selling of your equity on the move. It offers a host of other features like instant access to Net Position report, Live Advice and Top Gainers/Losers. You can also synchronise your transactions with other media also.</p>
                   </li>
                 </ul>
@@ -386,10 +386,10 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-orange-50 p-6 rounded-lg shadow-md">
+            <div className="bg-green-50 p-6 rounded-lg shadow-md">
               <div className="flex items-start">
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-3 text-orange-800">Industry Experts</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-green-800">Industry Experts</h3>
                   <p className="text-gray-700">
                     All of our offerings are initiated, conceptualized and executed by an experienced and dedicated team of experts. This team is comprised of professionals that come from diverse financial backgrounds and are continuously striving to power the clients' financial growth.
                   </p>
@@ -402,10 +402,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-orange-50 p-6 rounded-lg shadow-md">
+            <div className="bg-green-50 p-6 rounded-lg shadow-md">
               <div className="flex items-start">
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold mb-3 text-orange-800">Cutting Edge Technology</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-green-800">Cutting Edge Technology</h3>
                   <p className="text-gray-700">
                     All of our offerings and operations are backed by its excellent technical infrastructure which is the best in the industry – ensuring speed, accuracy, security and 24×7 service and support to clients.
                   </p>
@@ -420,15 +420,15 @@ export default function Home() {
           </div>
 
           <div className="mt-12">
-            <h3 className="text-2xl font-bold mb-6 text-center text-orange-800">Determinants of good service quality</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center text-green-800">Determinants of good service quality</h3>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
               {serviceQualityFactors.map((factor, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-white p-4 rounded-lg shadow border border-orange-200 text-center"
+                  className="bg-white p-4 rounded-lg shadow border border-green-200 text-center"
                 >
-                  <p className="font-medium text-orange-700">{factor}</p>
+                  <p className="font-medium text-green-700">{factor}</p>
                 </motion.div>
               ))}
             </div>
@@ -444,7 +444,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-orange-900">Why Choose Us</h2>
+            <h2 className="text-3xl font-bold text-green-900">Why Choose Us</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               About Us
             </p>
@@ -469,9 +469,9 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-orange-50 p-6 rounded-lg shadow-lg"
+                className="bg-green-50 p-6 rounded-lg shadow-lg"
               >
-                <item.icon className="w-12 h-12 text-orange-600 mb-4" />
+                <item.icon className="w-12 h-12 text-green-600 mb-4" />
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
               </motion.div>
@@ -480,21 +480,21 @@ export default function Home() {
 
           {/* FAQ Style Expandable Content */}
           <div className="mt-16">
-            <h3 className="text-2xl font-bold mb-8 text-center text-orange-800">Frequently Asked Questions</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center text-green-800">Frequently Asked Questions</h3>
             <div className="space-y-4 max-w-4xl mx-auto">
               {faqItems.map((faq, index) => (
                 <div
                   key={index}
-                  className="bg-orange-50 rounded-lg shadow-md overflow-hidden"
+                  className="bg-green-50 rounded-lg shadow-md overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFaq(index)}
-                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-orange-100 transition-colors"
+                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-green-100 transition-colors"
                   >
-                    <h4 className="text-lg font-semibold text-orange-900">{faq.question}</h4>
+                    <h4 className="text-lg font-semibold text-green-900">{faq.question}</h4>
                     {expandedFaqs.includes(index) ?
-                      <ChevronUp className="text-orange-600 flex-shrink-0" /> :
-                      <ChevronDown className="text-orange-600 flex-shrink-0" />
+                      <ChevronUp className="text-green-600 flex-shrink-0" /> :
+                      <ChevronDown className="text-green-600 flex-shrink-0" />
                     }
                   </button>
 
@@ -503,7 +503,7 @@ export default function Home() {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="px-6 py-4 bg-white border-t border-orange-100"
+                      className="px-6 py-4 bg-white border-t border-green-100"
                     >
                       <p className="text-gray-700">{faq.answer}</p>
                     </motion.div>
@@ -514,7 +514,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link to="/about" className="inline-flex items-center px-6 py-3 bg-orange-600 text-white rounded-full hover:bg-orange-700 transition-colors">
+            <Link to="/about" className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors">
               Watch The Video <ArrowRight className="ml-2" />
             </Link>
           </div>
@@ -522,7 +522,7 @@ export default function Home() {
       </section>
 
       {/* IICF Vision Section */}
-      <section className="py-20 bg-orange-50">
+      <section className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
@@ -530,20 +530,20 @@ export default function Home() {
             className="mb-12"
           >
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-orange-900 mb-6">Our Vision</h2>
+              <h2 className="text-3xl font-bold text-green-900 mb-6">Our Vision</h2>
               <p className="text-gray-600 text-xl font-semibold mb-6">INTERNATIONAL INSTITUTE OF COMMERCE FINANCE (IICF)</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 mt-12">
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4 text-orange-800">Mission</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-green-800">Mission</h3>
                 <p className="text-gray-700 mb-4">
                   Through excellent coaching and innovative teaching strategy and by generating value for investment management professionals and engaging with the investment industry to advance ethics, market integrity, and professional standards of practice, which collectively contributes value to society. And also, to provide best English and our sanatan traditional values teaching, so that students can compete and lead globally.
                 </p>
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4 text-orange-800">Vision</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-green-800">Vision</h3>
                 <p className="text-gray-700 mb-4">
                   Empowering the investment and finance and accounts, taxation industry to realize the world's greatest possibilities.
                 </p>
@@ -563,26 +563,26 @@ export default function Home() {
             </div>
 
             <div className="mt-12">
-              <h3 className="text-2xl font-bold mb-6 text-orange-800">Values</h3>
+              <h3 className="text-2xl font-bold mb-6 text-green-800">Values</h3>
               <div className="bg-white p-8 rounded-lg shadow-lg">
                 <p className="text-gray-700 mb-6">
                   We believe that financial markets and services should operate in the following ways:
                 </p>
                 <ul className="space-y-4 text-gray-700">
                   <li className="flex items-start">
-                    <Check className="w-5 h-5 mr-2 text-orange-500 mt-1 flex-shrink-0" />
+                    <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
                     <span>Investment professionals contribute to the ultimate benefit of society through the sustainable value generated by efficient financial markets and by effective investment institutions.</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="w-5 h-5 mr-2 text-orange-500 mt-1 flex-shrink-0" />
+                    <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
                     <span>Good stewardship and high ethical standards are necessary for trust and confidence to be secured and for society to be served. Financial markets should afford every investor the opportunity to earn a fair return.</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="w-5 h-5 mr-2 text-orange-500 mt-1 flex-shrink-0" />
+                    <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
                     <span>Financial markets are more effective with knowledgeable, diverse participants.</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="w-5 h-5 mr-2 text-orange-500 mt-1 flex-shrink-0" />
+                    <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
                     <span>High ethical principles and professional standards are essential to positive outcomes; rules and regulations, while necessary, are not sufficient by themselves.</span>
                   </li>
                 </ul>
@@ -591,16 +591,16 @@ export default function Home() {
 
             <div className="grid grid-cols-3 gap-6 mt-12 text-center">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-orange-800 mb-2">Vision</h3>
-                <div className="w-12 h-1 bg-orange-500 mx-auto mb-2"></div>
+                <h3 className="text-xl font-semibold text-green-800 mb-2">Vision</h3>
+                <div className="w-12 h-1 bg-green-500 mx-auto mb-2"></div>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-orange-800 mb-2">Mission</h3>
-                <div className="w-12 h-1 bg-orange-500 mx-auto mb-2"></div>
+                <h3 className="text-xl font-semibold text-green-800 mb-2">Mission</h3>
+                <div className="w-12 h-1 bg-green-500 mx-auto mb-2"></div>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-orange-800 mb-2">Core Values</h3>
-                <div className="w-12 h-1 bg-orange-500 mx-auto mb-2"></div>
+                <h3 className="text-xl font-semibold text-green-800 mb-2">Core Values</h3>
+                <div className="w-12 h-1 bg-green-500 mx-auto mb-2"></div>
               </div>
             </div>
           </motion.div>
@@ -616,7 +616,7 @@ export default function Home() {
             className="space-y-12"
           >
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-orange-900">Agro Projects</h2>
+              <h2 className="text-3xl font-bold text-green-900">Agro Projects</h2>
               <p className="text-gray-600 mt-4">Innovating agriculture for a sustainable future</p>
             </div>
 
@@ -628,15 +628,15 @@ export default function Home() {
                   <motion.div
                     key={index}
                     whileHover={{ y: -5 }}
-                    className="bg-orange-50 p-4 rounded-lg shadow-md"
+                    className="bg-green-50 p-4 rounded-lg shadow-md"
                   >
-                    <h3 className="text-lg font-semibold mb-2 text-orange-800">{project.title}</h3>
+                    <h3 className="text-lg font-semibold mb-2 text-green-800">{project.title}</h3>
                     <p className="text-gray-700 text-sm line-clamp-3">{project.description}</p>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="bg-orange-50 p-6 rounded-lg">
+              <div className="bg-green-50 p-6 rounded-lg">
                 <div className="space-y-4">
                   {inspirationalQuotes.slice(0, 5).map((quote, index) => (
                     <div key={index} className="bg-white p-4 rounded shadow-sm">
@@ -651,7 +651,7 @@ export default function Home() {
       </section>
 
       {/* Money Research Section */}
-      <section className="py-20 bg-orange-50">
+      <section className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -659,7 +659,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
               >
-                <h2 className="text-3xl font-bold mb-6 text-orange-900">Money Research</h2>
+                <h2 className="text-3xl font-bold mb-6 text-green-900">Money Research</h2>
                 <p className="text-gray-700 mb-6">
                   MAHASAMVIT GLOBAL MONEY RESEARCH – A pioneer in equity, commodity, currency and also in USA market and DGCX (DUBAI). Today we offer innovative investment strategies, that combine deep research insights, cutting Edge technology, and state of the art – quantitative techniques, for a superior wealth creation experiences.
                 </p>
@@ -688,19 +688,19 @@ export default function Home() {
             className="mb-12"
           >
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-orange-900 mb-6">Global Business Industry & Projects Consultancy</h2>
+              <h2 className="text-3xl font-bold text-green-900 mb-6">Global Business Industry & Projects Consultancy</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 mt-12">
-              <div className="bg-orange-50 p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4 text-orange-800">Vision</h3>
+              <div className="bg-green-50 p-8 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-semibold mb-4 text-green-800">Vision</h3>
                 <p className="text-gray-700 mb-4">
                   To be the most preferred Consulting Company for providing end-to-end, result oriented Consultancy Services and Solutions to Government Organizations, Banks, Corporates, Overseas Investors and MSMEs at a reasonable cost.
                 </p>
               </div>
 
-              <div className="bg-orange-50 p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4 text-orange-800">Mission</h3>
+              <div className="bg-green-50 p-8 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-semibold mb-4 text-green-800">Mission</h3>
                 <p className="text-gray-700 mb-4">
                   To excel as a competent, credible and reliable player capable of meeting diverse consultancy needs of our Stakeholders.
                 </p>
@@ -708,7 +708,7 @@ export default function Home() {
             </div>
 
             <div className="mt-12">
-              <h3 className="text-2xl font-bold mb-6 text-orange-800">Industries We Cater To</h3>
+              <h3 className="text-2xl font-bold mb-6 text-green-800">Industries We Cater To</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 {[
                   "Chemicals (Organic and Inorganic)",
@@ -720,7 +720,7 @@ export default function Home() {
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}
-                    className="bg-orange-50 p-6 rounded-lg shadow-md"
+                    className="bg-green-50 p-6 rounded-lg shadow-md"
                   >
                     <p className="font-medium text-gray-700">{industry}</p>
                   </motion.div>
@@ -732,14 +732,14 @@ export default function Home() {
       </section>
 
       {/* Job Consultancy Section */}
-      <section className="py-20 bg-orange-50">
+      <section className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-orange-900">Job Consultancy & Human Resources Company</h2>
+            <h2 className="text-3xl font-bold text-green-900">Job Consultancy & Human Resources Company</h2>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
               Exclusive and Retained, our Executive Search Practice is primarily focused on Board and CXO level leadership hiring.
             </p>
@@ -756,7 +756,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-orange-800">Industry Practices</h3>
+              <h3 className="text-xl font-semibold mb-4 text-green-800">Industry Practices</h3>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   "Education",
@@ -769,7 +769,7 @@ export default function Home() {
                   "Media & Entertainment Projects"
                 ].map((practice, index) => (
                   <div key={index} className="bg-white p-4 rounded-lg shadow">
-                    <p className="font-medium text-orange-700">{practice}</p>
+                    <p className="font-medium text-green-700">{practice}</p>
                   </div>
                 ))}
               </div>
@@ -787,7 +787,7 @@ export default function Home() {
             className="mb-12"
           >
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-orange-900 mb-6">Media & Entertainment Projects</h2>
+              <h2 className="text-3xl font-bold text-green-900 mb-6">Media & Entertainment Projects</h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
                 India's media and entertainment industries have always been an important part of our national story. As a young nation born in an era where film and radio were in their infancy, we have seen our triumphs and tribulations reflected in the mass media from the very start. These industries have also become important contributors to Indian economic prosperity. In recognition of their importance, the Union government officially designated audiovisual services as one of 12 'champion service sectors' in 2018.
               </p>
@@ -803,9 +803,9 @@ export default function Home() {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-orange-50 p-6 rounded-lg shadow-md text-center"
+                  className="bg-green-50 p-6 rounded-lg shadow-md text-center"
                 >
-                  <p className="font-medium text-orange-700">{item}</p>
+                  <p className="font-medium text-green-700">{item}</p>
                 </motion.div>
               ))}
             </div>
@@ -814,7 +814,7 @@ export default function Home() {
       </section>
 
       {/* Company Stats Section */}
-      <section className="py-20 bg-orange-900 text-white">
+      <section className="py-20 bg-green-900 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {companyStats.map((stat, index) => (
@@ -825,9 +825,9 @@ export default function Home() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <stat.icon className="w-12 h-12 mx-auto mb-4 text-orange-300" />
-                <h3 className="text-4xl font-bold mb-2 text-orange-100">{stat.number}</h3>
-                <p className="text-orange-200">{stat.label}</p>
+                <stat.icon className="w-12 h-12 mx-auto mb-4 text-green-300" />
+                <h3 className="text-4xl font-bold mb-2 text-green-100">{stat.number}</h3>
+                <p className="text-green-200">{stat.label}</p>
               </motion.div>
             ))}
           </div>
@@ -843,7 +843,7 @@ export default function Home() {
             className="space-y-12"
           >
             <div className="text-center">
-              <h2 className="text-3xl font-bold text-orange-900">Corporate Social Responsibility</h2>
+              <h2 className="text-3xl font-bold text-green-900">Corporate Social Responsibility</h2>
               <p className="text-gray-600 mt-4">Creating positive impact through sustainable initiatives</p>
             </div>
 
@@ -852,21 +852,21 @@ export default function Home() {
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-orange-50 p-8 rounded-lg shadow-lg text-center"
+                  className="bg-green-50 p-8 rounded-lg shadow-lg text-center"
                 >
-                  <h3 className="text-4xl font-bold mb-2 text-orange-600">{stat.number}</h3>
+                  <h3 className="text-4xl font-bold mb-2 text-green-600">{stat.number}</h3>
                   <p className="text-xl text-gray-700 mb-2">{stat.label}</p>
-                  <p className="text-sm text-orange-500">{stat.subtitle}</p>
+                  <p className="text-sm text-green-500">{stat.subtitle}</p>
                 </motion.div>
               ))}
             </div>
 
             <ImageCarousel images={csrImages} delayMs={1000} />
 
-            <div className="bg-orange-50 p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-6 text-orange-800">Corporate Social Responsibility Policy (MAHASAMVIT GROUP)</h3>
+            <div className="bg-green-50 p-8 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-semibold mb-6 text-green-800">Corporate Social Responsibility Policy (MAHASAMVIT GROUP)</h3>
 
-              <h4 className="text-xl font-semibold mb-4 text-orange-700">Introduction</h4>
+              <h4 className="text-xl font-semibold mb-4 text-green-700">Introduction</h4>
               <p className="text-gray-700 mb-6">
                 MAHASAMVIT CORPORATES philosophy is to be a professional organization and we aim to be one of the most respected companies, delivering superior and sustainable value with a commitment to its stakeholders to conduct business in an economically, socially and environmentally sustainable manner that is transparent and ethical.
               </p>
@@ -874,7 +874,7 @@ export default function Home() {
                 MAHASAMVIT is committed to undertake Corporate Social Responsibility ("CSR") activities in accordance with the provisions of Section 135 of the Companies Act, 2013 and related Rules. Aparajitha believes that corporate development has to be inclusive and every corporate has to be responsible for the development of a just and humane society that can build a national enterprise. Aparajitha commits itself to contribute to the society in ways possible for the organization and has set up Aparajitha Foundations, its core CSR team, as a means for fulfilling this commitment.
               </p>
 
-              <h4 className="text-xl font-semibold mb-4 text-orange-700">Objective</h4>
+              <h4 className="text-xl font-semibold mb-4 text-green-700">Objective</h4>
               <p className="text-gray-700 mb-4">
                 The objective of the CSR Policy ("Policy") is to lay down the guiding principles in undertaking various programs and projects by or on behalf of the company relating to Corporate Social Responsibility ("CSR") within the meaning of section 135 of the Companies Act, 2013 read with Schedule VII of the Act and the CSR Policy Rules 2014("Rules").
               </p>

@@ -23,7 +23,128 @@ const teamMembers = [
     specialization: "Emerging and innovative business projects and its global potentiality",
     additionalInfo: "Wealth manager by profession and veteran professor."
   },
-  // Add other team members similarly
+  {
+    name: "VIDYACHARAN CHIVUKULA",
+    role: "DIRECTOR",
+    location: "BENGALURU (KARNATAKA)",
+    qualifications: [
+      "CMA (COST AND MANAGEMENT ACCOUNTANT)",
+      "CS (COMPANY SECRETERY)"
+    ],
+    specialization: "Financial management and accounting",
+    additionalInfo: "Have vast working experience as CFO (Chief financial officer) of various companies."
+  },
+  {
+    name: "HARIPRIYA REDDY",
+    role: "DIRECTOR",
+    location: "CHENNAI (TAMIL NADU)",
+    qualifications: [
+      "MSC MPHIL PhD",
+      "Nutritionist",
+      "National Invitee President ALL INDIA CONSUMER WELFARE ASSOCIATION AICWC",
+      "Women wing President INDIAN DIETETIC ASSOCIATION PUDUCHERRY CHAPTER"
+    ],
+    specialization: "Nutrition and healthcare management",
+    additionalInfo: "CONVENER NETPROFAN PUDUCHERRY CHAPTER. Working as chief dietitian in Cygnus hospital. CONVENER HEALTH CARE AND NUTRITION REDCROSS HYDERABAD Branch. Working with DIOSIV FOODS PVT LTD, NEWDELHI. Worked with AVALEHA FOOD PRODUCTS Hyderabad, WORKING WITH WHO also."
+  },
+  {
+    name: "SUMAN BANERJEE",
+    role: "SHAREHOLDER AND CONSULTANT",
+    location: "KOLKATA (WEST BENGAL)",
+    qualifications: [
+      "MSC (PHYSICS)",
+      "PHD(USA)",
+      "POST DOCTORATE"
+    ],
+    specialization: "Research and development",
+    additionalInfo: ""
+  },
+  {
+    name: "TAPAS KUMAR MAITY",
+    role: "SHAREHOLDER AND MARKETING EXECUTIVE",
+    location: "",
+    qualifications: [],
+    specialization: "Marketing and business development",
+    additionalInfo: ""
+  }
+];
+
+const advisorsConsultants = [
+  {
+    name: "SUBODH MATHUR",
+    role: "EX DEAN (ECONOMICS) OF MIT",
+    location: "Massachusetts Institute of Technology",
+    qualifications: []
+  },
+  {
+    name: "RUDRA PRATAP DUTTA",
+    role: "CS, ICWA",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "DR. PRAVAS MITRA",
+    role: "LLD",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "DR SUSHIL CHATURVEDI",
+    role: "AGRICULTURAL SCIENTIST",
+    location: "",
+    qualifications: []
+  }
+];
+
+const internationalConsultants = [
+  {
+    name: "Jerry Weygandt",
+    role: "CFA, CMT",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "Terry Warfield",
+    role: "CFA, MBA (FINANCE)",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "Donald Kieso",
+    role: "ACCA",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "Paul Kimmel",
+    role: "CIMA",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "Pam Smith",
+    role: "CPA",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "Monte Swain",
+    role: "CMT",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "Peter Olinto",
+    role: "CFA",
+    location: "",
+    qualifications: []
+  },
+  {
+    name: "John Grable",
+    role: "CFP",
+    location: "",
+    qualifications: []
+  }
 ];
 
 export default function About() {
@@ -33,7 +154,7 @@ export default function About() {
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="relative py-20 bg-gradient-to-r from-orange-600 to-orange-400"
+        className="relative py-20 bg-gradient-to-r from-green-600 to-green-400"
       >
         <div className="absolute inset-0">
           <img 
@@ -65,7 +186,7 @@ export default function About() {
       </motion.div>
 
       {/* Mission & Vision Section */}
-      <div className="py-20 bg-orange-50">
+      <div className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <motion.div 
@@ -74,8 +195,8 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-lg shadow-lg"
             >
-              <Target className="w-12 h-12 text-orange-600 mb-4" />
-              <h2 className="text-2xl font-bold mb-4 text-orange-900">Our Mission</h2>
+              <Target className="w-12 h-12 text-green-600 mb-4" />
+              <h2 className="text-2xl font-bold mb-4 text-green-900">Our Mission</h2>
               <p className="text-gray-600">
                 To provide innovative financial solutions that drive global economic growth and create lasting value for our clients through excellence in service and expertise.
               </p>
@@ -86,8 +207,8 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-white p-8 rounded-lg shadow-lg"
             >
-              <Globe className="w-12 h-12 text-orange-600 mb-4" />
-              <h2 className="text-2xl font-bold mb-4 text-orange-900">Our Vision</h2>
+              <Globe className="w-12 h-12 text-green-600 mb-4" />
+              <h2 className="text-2xl font-bold mb-4 text-green-900">Our Vision</h2>
               <p className="text-gray-600">
                 To be the global leader in financial services and research, setting new standards in innovation and client success.
               </p>
@@ -105,7 +226,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-orange-900">Our Core Values</h2>
+            <h2 className="text-3xl font-bold text-green-900">Our Core Values</h2>
             <p className="text-gray-600 mt-4">The principles that guide everything we do</p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -132,10 +253,10 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="bg-orange-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-green-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
               >
-                <value.icon className="w-12 h-12 text-orange-600 mb-4" />
-                <h3 className="text-xl font-bold mb-4 text-orange-900">{value.title}</h3>
+                <value.icon className="w-12 h-12 text-green-600 mb-4" />
+                <h3 className="text-xl font-bold mb-4 text-green-900">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </motion.div>
             ))}
@@ -144,7 +265,7 @@ export default function About() {
       </div>
 
       {/* Stats Section */}
-      <div className="py-20 bg-gradient-to-r from-orange-600 to-orange-400 relative">
+      <div className="py-20 bg-gradient-to-r from-green-600 to-green-400 relative">
         <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-4 gap-8">
@@ -175,7 +296,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-orange-900">Our Leadership Team</h2>
+            <h2 className="text-3xl font-bold text-green-900">Our Leadership Team</h2>
             <p className="text-gray-600 mt-4">Meet the experts behind our success</p>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -186,29 +307,31 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="bg-orange-50 p-8 rounded-lg shadow-lg"
+                className="bg-green-50 p-8 rounded-lg shadow-lg"
               >
-                <h3 className="text-xl font-bold text-orange-900 mb-2">{member.name}</h3>
-                <p className="text-orange-600 mb-4">{member.role}</p>
-                <p className="text-gray-600 mb-4">{member.location}</p>
-                <div className="space-y-2">
-                  {member.qualifications.map((qual, idx) => (
-                    <div key={idx} className="flex items-center">
-                      <BookOpen className="w-4 h-4 text-orange-600 mr-2" />
-                      <span className="text-gray-600">{qual}</span>
-                    </div>
-                  ))}
-                </div>
-                <p className="mt-4 text-gray-600">{member.specialization}</p>
-                <p className="mt-2 text-gray-600 italic">{member.additionalInfo}</p>
+                <h3 className="text-xl font-bold text-green-900 mb-2">{member.name}</h3>
+                <p className="text-green-600 mb-4">{member.role}</p>
+                {member.location && <p className="text-gray-600 mb-4">{member.location}</p>}
+                {member.qualifications.length > 0 && (
+                  <div className="space-y-2 mb-4">
+                    {member.qualifications.map((qual, idx) => (
+                      <div key={idx} className="flex items-center">
+                        <BookOpen className="w-4 h-4 text-green-600 mr-2" />
+                        <span className="text-gray-600">{qual}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {member.specialization && <p className="mt-2 text-gray-600">{member.specialization}</p>}
+                {member.additionalInfo && <p className="mt-2 text-gray-600 italic">{member.additionalInfo}</p>}
               </motion.div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* Corporate Structure Section */}
-      <div className="py-20 bg-orange-50">
+      {/* Advisors & Consultants Section */}
+      <div className="py-20 bg-green-50">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -216,7 +339,68 @@ export default function About() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-orange-900">Corporate Structure</h2>
+            <h2 className="text-3xl font-bold text-green-900">Advisors & Consultants</h2>
+            <p className="text-gray-600 mt-4">Our expert advisors and partners</p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {advisorsConsultants.map((advisor, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2 }}
+                className="bg-white p-6 rounded-lg shadow-lg"
+              >
+                <h3 className="text-xl font-bold text-green-900 mb-2">{advisor.name}</h3>
+                <p className="text-green-600 mb-2">{advisor.role}</p>
+                {advisor.location && <p className="text-gray-600">{advisor.location}</p>}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* International Consultants Section */}
+      <div className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-green-900">International Finance Consultants</h2>
+            <p className="text-gray-600 mt-4">Our global network of finance professionals</p>
+          </motion.div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {internationalConsultants.map((consultant, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-green-50 p-6 rounded-lg shadow-lg"
+              >
+                <h3 className="text-lg font-bold text-green-900 mb-2">{consultant.name}</h3>
+                <p className="text-green-600">{consultant.role}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Corporate Structure Section */}
+      <div className="py-20 bg-green-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-green-900">Corporate Structure</h2>
             <p className="text-gray-600 mt-4">Our organizational framework</p>
           </motion.div>
           <motion.div 
@@ -227,22 +411,22 @@ export default function About() {
           >
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-bold text-orange-900 mb-4">MAHASAMVIT INTERNATIONAL LIMITED</h3>
+                <h3 className="text-xl font-bold text-green-900 mb-4">MAHASAMVIT INTERNATIONAL LIMITED</h3>
                 <p className="text-gray-600">Corporate Identity Number: U85499KA2024PLC186653</p>
                 <p className="text-gray-600">PAN: AARCM9402C</p>
                 <p className="text-gray-600">TAN: BLRM47275E</p>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 bg-orange-50 rounded-lg">
-                  <h4 className="font-semibold text-orange-900 mb-2">Subsidiary Companies</h4>
+                <div className="p-6 bg-green-50 rounded-lg">
+                  <h4 className="font-semibold text-green-900 mb-2">Subsidiary Companies</h4>
                   <ul className="space-y-2 text-gray-600">
                     <li>MAHASAMVIT FINANCIAL SERVICES – ON PROCESS</li>
                     <li>MAHASAMVIT AGROTECH LIMITED – ON PROCESS</li>
                     <li>MAHASAMVIT MEDIA AND ENTERTAINMENT PVT. LTD. – ON PROCESS</li>
                   </ul>
                 </div>
-                <div className="p-6 bg-orange-50 rounded-lg">
-                  <h4 className="font-semibold text-orange-900 mb-2">Key Initiatives</h4>
+                <div className="p-6 bg-green-50 rounded-lg">
+                  <h4 className="font-semibold text-green-900 mb-2">Key Initiatives</h4>
                   <ul className="space-y-2 text-gray-600">
                     <li>International Institute of Commerce and Finance (IICF)</li>
                     <li>Global Financial Services</li>
