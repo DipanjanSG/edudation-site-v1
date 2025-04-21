@@ -121,7 +121,7 @@ const FinancialServices = () => {
       className="pt-16"
     >
       {/* Hero Section */}
-      <div className="relative py-20 bg-gradient-to-r from-green-600 to-green-400">
+      <div className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-400">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
@@ -142,7 +142,7 @@ const FinancialServices = () => {
             </p>
             <button
               onClick={openBrochureModal}
-              className="inline-flex items-center px-6 py-3 bg-white text-green-600 rounded-full hover:bg-green-50 transition-colors shadow-lg"
+              className="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full hover:bg-blue-50 transition-colors shadow-lg"
             >
               <Download className="w-5 h-5 mr-2" />
               Download Brochure
@@ -158,15 +158,15 @@ const FinancialServices = () => {
             <p className="text-lg text-gray-700 mb-10 leading-relaxed">
               It is with our years of experience and knowledge about the category that we have been able to distinguish what will work and what may not. It is this ability and our perspective that our clients value us for. We believe our wealth is in the people, the knowledge and the experience. What we share is our wisdom to 'power our client's financial growth'
             </p>
-            <h2 className="text-3xl font-bold text-green-900 mb-8">
+            <h2 className="text-3xl font-bold text-blue-900 mb-8">
               A PROLONGED PROMISE REGARDING FINANCIAL SERVICES
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {ethosList.slice(0, 4).map((item, index) => (
-              <div key={index} className="bg-green-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-green-900 mb-3">{item.title}</h3>
+              <div key={index} className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-blue-900 mb-3">{item.title}</h3>
                 <p className="text-gray-700">{item.description}</p>
               </div>
             ))}
@@ -174,8 +174,8 @@ const FinancialServices = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
             {ethosList.slice(4).map((item, index) => (
-              <div key={index} className="bg-green-50 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold text-green-900 mb-3">{item.title}</h3>
+              <div key={index} className="bg-blue-50 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-blue-900 mb-3">{item.title}</h3>
                 <p className="text-gray-700">{item.description}</p>
               </div>
             ))}
@@ -184,18 +184,18 @@ const FinancialServices = () => {
       </section>
 
       {/* Services Icons Section */}
-      <section className="py-16 bg-green-100">
+      <section className="py-16 bg-blue-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
             {servicesIcons.map((service) => (
               <div key={service.id} className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
-                <div className="w-14 h-14 rounded-full bg-green-200 flex items-center justify-center mx-auto mb-4">
-                  <service.icon className="w-7 h-7 text-green-600" />
+                <div className="w-14 h-14 rounded-full bg-blue-200 flex items-center justify-center mx-auto mb-4">
+                  <service.icon className="w-7 h-7 text-blue-600" />
                 </div>
                 <div className="flex items-center justify-center mb-2">
-                  <span className="text-green-900 font-bold mr-2">{service.id}</span>
+                  <span className="text-blue-900 font-bold mr-2">{service.id}</span>
                 </div>
-                <h3 className="text-lg font-semibold text-green-900">{service.title}</h3>
+                <h3 className="text-lg font-semibold text-blue-900">{service.title}</h3>
               </div>
             ))}
           </div>
@@ -206,7 +206,7 @@ const FinancialServices = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900 mb-4">Rules of Warren Buffet</h2>
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">Rules of Warren Buffet</h2>
             <p className="text-gray-700 text-lg italic max-w-3xl mx-auto">
               "I want to be able to explain my mistakes" — this means I do only the things that I completely understand he says.
             </p>
@@ -217,11 +217,11 @@ const FinancialServices = () => {
               <motion.div
                 key={rule.id}
                 whileHover={{ y: -5 }}
-                className="bg-green-50 p-6 rounded-lg shadow-md"
+                className="bg-blue-50 p-6 rounded-lg shadow-md"
               >
                 <div className="flex items-center mb-4">
-                  <span className="text-2xl font-bold text-green-600 mr-2">{rule.id}.</span>
-                  <h3 className="text-xl font-semibold text-green-900">{rule.title}</h3>
+                  <span className="text-2xl font-bold text-blue-600 mr-2">{rule.id}.</span>
+                  <h3 className="text-xl font-semibold text-blue-900">{rule.title}</h3>
                 </div>
                 <p className="text-gray-700">
                   {rule.description}
@@ -233,7 +233,7 @@ const FinancialServices = () => {
       </section>
 
       {/* Promise Section */}
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-6">We Promise to Provide Best Services to Make Huge Money.</h2>
@@ -241,7 +241,7 @@ const FinancialServices = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {promiseItems.map((item, index) => (
-              <div key={index} className="bg-green-700 p-6 rounded-lg hover:bg-green-800 transition-colors">
+              <div key={index} className="bg-blue-700 p-6 rounded-lg hover:bg-blue-800 transition-colors">
                 <div className="flex items-center mb-4">
                   <item.icon className="w-6 h-6 mr-3" />
                   <h3 className="text-xl font-semibold">{item.title}</h3>
@@ -257,7 +257,7 @@ const FinancialServices = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-green-900 mb-6">
+              <h2 className="text-3xl font-bold text-blue-900 mb-6">
                 MAHASAMVIT Financial Services
               </h2>
               <div className="space-y-4 text-gray-700">
@@ -287,10 +287,10 @@ const FinancialServices = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900 mb-4">Mission & Vision</h2>
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">Mission & Vision</h2>
             <p className="text-gray-700 text-lg max-w-3xl mx-auto">
               MAHASAMVIT FINANCIAL SERVICES LIMITED –(MFSL)
             </p>
@@ -298,7 +298,7 @@ const FinancialServices = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-green-900 mb-4">Mission</h3>
+              <h3 className="text-2xl font-bold text-blue-900 mb-4">Mission</h3>
               <div className="text-gray-700 space-y-3">
                 <p>
                   Our mission is to provide personal financial services of a superior quality to the members/owners; our chief concern being their financial well-being. We desire to be the primary financial institution of our members. We will use automation and technology to support a highly trained group of volunteers and staff.
@@ -319,27 +319,27 @@ const FinancialServices = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-green-900 mb-4">Vision</h3>
+              <h3 className="text-2xl font-bold text-blue-900 mb-4">Vision</h3>
               <p className="text-gray-700 mb-8">
                 To distinguish assiduous as an admired multinational financial services leader, trusted partner, and provider of innovative solutions for growing and protecting wealth.
               </p>
 
-              <h3 className="text-2xl font-bold text-green-900 mb-4">Values</h3>
+              <h3 className="text-2xl font-bold text-blue-900 mb-4">Values</h3>
               <p className="text-gray-700 mb-8">
                 We strive to create value for our clients and employees while adhering to principles of excellence and trust.
               </p>
 
               <div className="grid grid-cols-3 gap-4 text-center">
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <p className="text-2xl font-bold text-green-900">125600+</p>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-2xl font-bold text-blue-900">125600+</p>
                   <p className="text-gray-700">Students enrolled</p>
                 </div>
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <p className="text-2xl font-bold text-green-900">200+</p>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-2xl font-bold text-blue-900">200+</p>
                   <p className="text-gray-700">Registered instructors</p>
                 </div>
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <p className="text-2xl font-bold text-green-900">100%</p>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-2xl font-bold text-blue-900">100%</p>
                   <p className="text-gray-700">Success Rate</p>
                 </div>
               </div>
@@ -349,7 +349,7 @@ const FinancialServices = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-green-900 text-white">
+      <section className="py-16 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Financial Journey?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
@@ -358,13 +358,13 @@ const FinancialServices = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-white text-green-900 rounded-full hover:bg-green-100 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-white text-blue-900 rounded-full hover:bg-blue-100 transition-colors"
             >
               Contact Us <ChevronRight className="ml-2" />
             </Link>
             <button
               onClick={openBrochureModal}
-              className="inline-flex items-center px-6 py-3 bg-green-800 text-white rounded-full hover:bg-green-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-blue-800 text-white rounded-full hover:bg-blue-700 transition-colors"
             >
               <Download className="w-5 h-5 mr-2" />
               Download Financial Services Brochure

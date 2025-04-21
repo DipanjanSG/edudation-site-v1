@@ -118,14 +118,14 @@ const MediaEntertainment = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-green-900">Some Words About Media and Entertainment Industry</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">Some Words About Media and Entertainment Industry</h2>
               <p className="text-gray-700 mb-6">
                 India's media and entertainment industries have always been an important part of our national story. As a young nation born in an era where film and radio were in their infancy, we have seen our triumphs and tribulations reflected in the mass media from the very start. These industries have also become important contributors to Indian economic prosperity. In recognition of their importance, the Union government officially designated audiovisual services as one of 12 'champion service sectors' in 2018.
               </p>
               <p className="text-gray-700 mb-6">
                 The sector is witnessing change at breakneck speed – developments in technology, notably the internet and over the top (OTT) content have indelibly changed the creation, distribution and consumption of content. The growing OTT ecosystem offers flexibility to creators and consumers, expands choice, and lowers distribution and search costs. Other developments such as strides in artificial intelligence, virtual reality and augmented reality, are opening up new possibilities in entertainment, creating entirely new categories of products. In its response to these changes, India could potentially propel the sector to new heights and make the country a global leader in entertainment.
               </p>
-              <div className="flex items-center text-green-600">
+              <div className="flex items-center text-blue-600">
                 <TrendingUp className="w-6 h-6 mr-2" />
                 <span className="font-semibold">Rapidly evolving digital landscape</span>
               </div>
@@ -142,10 +142,10 @@ const MediaEntertainment = () => {
       </section>
 
       {/* Fastest Growing Segments */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Largest and Fastest-Growing Segments</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Largest and Fastest-Growing Segments</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Key segments driving growth in the media and entertainment industry
             </p>
@@ -160,7 +160,7 @@ const MediaEntertainment = () => {
                       {segment.id}
                     </span>
                   </div>
-                  <h3 className="text-xl font-semibold text-green-900">{segment.title}</h3>
+                  <h3 className="text-xl font-semibold text-blue-900">{segment.title}</h3>
                 </div>
                 {segment.id === "01" && (
                   <p className="mt-4 text-gray-700 text-sm">{segment.description}</p>
@@ -175,13 +175,13 @@ const MediaEntertainment = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Notable trends in the Media and Entertainment Industry</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Notable trends in the Media and Entertainment Industry</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {notableTrends.map((trend) => (
-              <div key={trend.id} className="bg-green-50 p-6 rounded-lg shadow hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-semibold mb-3 text-green-900 flex items-center">
+              <div key={trend.id} className="bg-blue-50 p-6 rounded-lg shadow hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-semibold mb-3 text-blue-900 flex items-center">
                   <span className="mr-2">{trend.id}.</span>
                   {trend.title}
                 </h3>
@@ -193,10 +193,10 @@ const MediaEntertainment = () => {
       </section>
 
       {/* Entertainment Sectors */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">The Entertainment Sector Is Split Into Ten Segments</h2>
+            <h2 className="text-3xl font-bold text-blue-900">The Entertainment Sector Is Split Into Ten Segments</h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -206,7 +206,7 @@ const MediaEntertainment = () => {
                 whileHover={{ y: -5 }}
                 className="bg-white p-4 rounded-lg text-center shadow-md"
               >
-                <p className="font-medium text-green-900">{sector}</p>
+                <p className="font-medium text-blue-900">{sector}</p>
               </motion.div>
             ))}
           </div>
@@ -218,7 +218,7 @@ const MediaEntertainment = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-green-900">Indian Media and Entertainment Industry is Growing Rapidly</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">Indian Media and Entertainment Industry is Growing Rapidly</h2>
               <p className="text-gray-700 mb-4">
                 India's media and entertainment (M&E) industry is expected to expand at a CAGR of 3.24% between 2019-20 and 2021-22 to reach US$ 25.56 billion by 2021-22 due to acceleration of digital adoption among users across geographies.
               </p>
@@ -281,13 +281,13 @@ const MediaEntertainment = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Our Values Are</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Our Values Are</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {companyValues.map((value, index) => (
-              <div key={index} className="bg-green-50 p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold mb-3 text-green-900">{value.title}</h3>
+              <div key={index} className="bg-blue-50 p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-3 text-blue-900">{value.title}</h3>
                 <p className="text-gray-700">{value.description}</p>
               </div>
             ))}
@@ -296,7 +296,7 @@ const MediaEntertainment = () => {
       </section>
 
       {/* Media Streaming */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
@@ -307,14 +307,14 @@ const MediaEntertainment = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold mb-6 text-green-900">The Transformation of Media Consumption</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">The Transformation of Media Consumption</h2>
               <p className="text-gray-700 mb-6">
                 The media landscape has evolved dramatically with streaming services now representing over 38.1% of total viewership, compared to traditional broadcasting at 24.7% and cable at 30.9%. This shift reflects changing consumer preferences toward on-demand, personalized content experiences across multiple devices.
               </p>
               <p className="text-gray-700 mb-6">
                 Major platforms like YouTube, Netflix, Hulu, and Amazon Prime Video continue to reshape how content is produced, distributed and monetized, while creating new opportunities for content creators, advertisers and technology providers throughout the ecosystem.
               </p>
-              <div className="flex items-center text-green-600">
+              <div className="flex items-center text-blue-600">
                 <PieChart className="w-6 h-6 mr-2" />
                 <span className="font-semibold">Streaming dominance reshaping the industry</span>
               </div>

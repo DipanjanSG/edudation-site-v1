@@ -161,7 +161,7 @@ const AgroProjects = () => {
       className="pt-16"
     >
       {/* Hero Section */}
-      <div className="relative py-20 bg-gradient-to-r from-green-600 to-green-400">
+      <div className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-400">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80"
@@ -179,7 +179,7 @@ const AgroProjects = () => {
             </p>
             <button
               onClick={openBrochureModal}
-              className="inline-flex items-center px-6 py-3 bg-white text-green-600 rounded-full hover:bg-green-50 transition-colors shadow-lg"
+              className="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full hover:bg-blue-50 transition-colors shadow-lg"
             >
               <Download className="w-5 h-5 mr-2" />
               Download Agro Projects Brochures
@@ -192,7 +192,7 @@ const AgroProjects = () => {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-green-600 mb-8">Agro Projects</h2>
+            <h2 className="text-4xl font-bold text-blue-600 mb-8">Agro Projects</h2>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl italic text-gray-700 mb-3">
                 "Self-belief and hard work will always earn you success."
@@ -297,7 +297,7 @@ const AgroProjects = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-green-900">Some Words About Agro Projects</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">Some Words About Agro Projects</h2>
               <p className="text-gray-700 mb-6">
                 Mahasamvit will be global ag-ecosystem intelligence provider. Mahasamvit's suite of products enables various stakeholders in the agri-ecosystem, including financial services providers, to adopt and drive digital strategy across their agricultural operations.
               </p>
@@ -309,31 +309,31 @@ const AgroProjects = () => {
               </p>
               <ul className="list-inside text-gray-700 mb-6 space-y-2">
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>Evaluation of new and current formulations in different agro-eco regions of the country.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>Promotion and creating awareness about the new products.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>Channelizing information to consumers for the right technical use.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>Developing interface with the State Departments of Agriculture.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>Training of agri-input dealers & farmers.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>Registration of pesticides and label expansion on crops by generating scientific data on different parameters like bio-efficacy, residue, persistence, toxicity etc.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>Development of innovative and safer formulation which inhibits safe and environmental friendly approach.</span>
                 </li>
               </ul>
@@ -350,10 +350,10 @@ const AgroProjects = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Projects</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Projects</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Explore our diverse range of agricultural projects designed for sustainability and profitability
             </p>
@@ -375,8 +375,8 @@ const AgroProjects = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-semibold text-green-900">{project.title}</h3>
-                    <span className="text-green-600 font-bold">{project.number}</span>
+                    <h3 className="text-xl font-semibold text-blue-900">{project.title}</h3>
+                    <span className="text-blue-600 font-bold">{project.number}</span>
                   </div>
                 </div>
               </motion.div>
@@ -389,7 +389,7 @@ const AgroProjects = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Rising Demand Of Indian Products In International Market</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Rising Demand Of Indian Products In International Market</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Key trends shaping the future of agricultural business and export opportunities
             </p>
@@ -397,13 +397,13 @@ const AgroProjects = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {marketTrends.map((trend, index) => (
-              <div key={index} className="bg-green-50 p-6 rounded-lg shadow-md">
+              <div key={index} className="bg-blue-50 p-6 rounded-lg shadow-md">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">
+                  <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mr-4">
                     {trend.number}
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-green-900">{trend.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-blue-900">{trend.title}</h3>
                     <p className="text-gray-700">{trend.description}</p>
                   </div>
                 </div>
@@ -414,20 +414,20 @@ const AgroProjects = () => {
       </section>
 
       {/* Advantage India Section */}
-      <section className="py-20 bg-green-900 text-white">
+      <section className="py-20 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Advantage India</h2>
-            <p className="text-green-200 mt-4">
+            <p className="text-blue-200 mt-4">
               India's unique position in the global agricultural landscape
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {advantages.map((advantage, index) => (
-              <div key={index} className="bg-green-800 p-6 rounded-lg text-center">
+              <div key={index} className="bg-blue-800 p-6 rounded-lg text-center">
                 <h3 className="text-xl font-semibold mb-3">{advantage.title}</h3>
-                <p className="text-green-200">{advantage.description}</p>
+                <p className="text-blue-200">{advantage.description}</p>
               </div>
             ))}
           </div>
@@ -438,7 +438,7 @@ const AgroProjects = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Specialty Projects</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Specialty Projects</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Innovative agricultural initiatives with high market potential
             </p>
@@ -455,7 +455,7 @@ const AgroProjects = () => {
                   />
                 </div>
                 <div className={`order-1 ${index % 2 === 1 ? 'md:order-2' : 'md:order-1'}`}>
-                  <h3 className="text-2xl font-semibold mb-4 text-green-900">{project.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-4 text-blue-900">{project.title}</h3>
                   <p className="text-gray-700 mb-4">{project.description}</p>
                   {project.details && <p className="text-gray-700">{project.details}</p>}
                 </div>
@@ -466,10 +466,10 @@ const AgroProjects = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Mission & Vision</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Mission & Vision</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               AGGROTECH AND AGRICULTURAL RESEARCH PROJECTS
             </p>
@@ -477,29 +477,29 @@ const AgroProjects = () => {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-green-900">Vision</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-blue-900">Vision</h3>
               <p className="text-gray-700 mb-4">
                 To become an Indian Multinational Conglomerate who touches lives of millions through its high-quality products produced with advanced technologies and processes, serving customers globally.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-green-900">Mission</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-blue-900">Mission</h3>
               <ul className="text-gray-700 space-y-2">
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>To create a brand that is familiar and liked by every household within country.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>To become a true Indian MNC with Pan India presence and operations across the globe.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>To create best value proposition to investors, vendors & society.</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                  <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                   <span>To uphold the principles of corporate governance.</span>
                 </li>
               </ul>
@@ -517,19 +517,19 @@ const AgroProjects = () => {
 
             <ul className="text-gray-700 space-y-2 mb-6">
               <li className="flex items-start">
-                <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                 <span><strong>Endeavour:</strong> To reach beyond the expectations the needs of our clients</span>
               </li>
               <li className="flex items-start">
-                <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                 <span><strong>Quality:</strong> To ensure our clients the highest standards of technical assistance and professional management of services</span>
               </li>
               <li className="flex items-start">
-                <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                 <span><strong>Innovation:</strong> To continuously expand our consultancy services across the world and to other sectors in order to constantly satisfy the diverse expectations of our clients</span>
               </li>
               <li className="flex items-start">
-                <Check className="w-5 h-5 mr-2 text-green-500 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 mr-2 text-blue-500 mt-1 flex-shrink-0" />
                 <span><strong>Development:</strong> To help communities in the developing world find sustainable solutions to sustainable agriculture, social, economic, and environmental issues, as our contribution to International Development.</span>
               </li>
             </ul>
@@ -542,13 +542,13 @@ const AgroProjects = () => {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-20 bg-green-900 text-white">
+      <section className="py-20 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold">Core Values</h2>
           </div>
 
-          <div className="bg-green-800 p-8 rounded-lg">
+          <div className="bg-blue-800 p-8 rounded-lg">
             <p className="mb-6">
               Personal lives are enriched by values, the same holds true for organizations. To be "the one" one has to operate in fair, humble and good faith. Likewise, we nurture our lofty aspirations honestly by integrity and solidarity.
             </p>
@@ -565,20 +565,20 @@ const AgroProjects = () => {
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-green-900 mb-6">Ready to Invest in Sustainable Agriculture?</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">Ready to Invest in Sustainable Agriculture?</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Contact our agro projects team today to discuss investment opportunities and partnership possibilities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
             >
               Explore Opportunities <ArrowRight className="ml-2" />
             </Link>
             <button
               onClick={openBrochureModal}
-              className="inline-flex items-center px-6 py-3 bg-green-100 text-green-600 rounded-full hover:bg-green-200 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition-colors"
             >
               <Download className="w-5 h-5 mr-2" />
               Download Investment Materials

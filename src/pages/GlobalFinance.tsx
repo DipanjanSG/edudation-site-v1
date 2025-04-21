@@ -186,7 +186,7 @@ const GlobalFinance = () => {
       className="pt-16"
     >
       {/* Hero Section */}
-      <div className="relative py-20 bg-gradient-to-r from-green-600 to-green-400">
+      <div className="relative py-20 bg-gradient-to-r from-blue-600 to-blue-400">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
@@ -204,7 +204,7 @@ const GlobalFinance = () => {
             </p>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="inline-flex items-center px-6 py-3 bg-white text-green-600 rounded-full hover:bg-green-50 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-full hover:bg-blue-50 transition-colors"
             >
               Download Brochure <Download className="ml-2" />
             </button>
@@ -217,7 +217,7 @@ const GlobalFinance = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-green-900">
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">
                 INTERNATIONAL INSTITUTE OF COMMERCE AND FINANCE (IICF)
               </h2>
               <p className="text-gray-700 mb-6">
@@ -226,7 +226,7 @@ const GlobalFinance = () => {
               <p className="text-gray-700 mb-6">
                 Faculties at AIIF take teaching very seriously and follow a structured pattern throughout the weeks of scheduled coaching enabling timely completion of the course along with regular discussion classes.
               </p>
-              <h3 className="text-xl font-semibold mb-4 text-green-800">IICF's core and value system stands on the 5 principles</h3>
+              <h3 className="text-xl font-semibold mb-4 text-blue-800">IICF's core and value system stands on the 5 principles</h3>
             </div>
             <div className="relative">
               <img
@@ -248,10 +248,10 @@ const GlobalFinance = () => {
               <motion.div
                 key={index}
                 whileHover={{ y: -10 }}
-                className="bg-green-50 p-6 rounded-lg shadow-md text-center"
+                className="bg-blue-50 p-6 rounded-lg shadow-md text-center"
               >
-                <principle.icon className="w-12 h-12 text-green-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3 text-green-900">{principle.name}</h3>
+                <principle.icon className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-3 text-blue-900">{principle.name}</h3>
                 <p className="text-sm text-gray-600">{principle.description}</p>
               </motion.div>
             ))}
@@ -260,10 +260,10 @@ const GlobalFinance = () => {
       </section>
 
       {/* Career Opportunities Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Career Opportunities</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Career Opportunities</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Explore diverse career paths in finance, accounting, and business
             </p>
@@ -276,8 +276,8 @@ const GlobalFinance = () => {
                 whileHover={{ y: -5 }}
                 className="bg-white p-6 rounded-lg shadow-lg"
               >
-                <career.icon className="w-10 h-10 text-green-600 mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-green-800">{career.title}</h3>
+                <career.icon className="w-10 h-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-semibold mb-2 text-blue-800">{career.title}</h3>
                 <p className="text-gray-600">{career.description}</p>
               </motion.div>
             ))}
@@ -290,12 +290,12 @@ const GlobalFinance = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-green-900">Masters and PhD (International)</h2>
-              <p className="text-xl font-semibold mb-4 text-green-700">What is PhD in Finance?</p>
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">Masters and PhD (International)</h2>
+              <p className="text-xl font-semibold mb-4 text-blue-700">What is PhD in Finance?</p>
               <p className="text-gray-700 mb-6">
                 A PhD in Finance is a doctoral-level academic degree program in finance that focuses on advanced research and theoretical study. It is intended for people who want to work in academia, research, or advanced positions in the financial industry.
               </p>
-              <p className="text-xl font-semibold mb-4 text-green-700">What can you do with a PhD in Finance?</p>
+              <p className="text-xl font-semibold mb-4 text-blue-700">What can you do with a PhD in Finance?</p>
               <p className="text-gray-700 mb-6">
                 A PhD in Finance can lead to a variety of professional prospects in a variety of fields. Individuals with a PhD in Finance may pursue the following professional paths:
               </p>
@@ -315,12 +315,12 @@ const GlobalFinance = () => {
               <motion.div
                 key={index}
                 whileHover={{ y: -5 }}
-                className="bg-green-50 p-6 rounded-lg shadow-md"
+                className="bg-blue-50 p-6 rounded-lg shadow-md"
               >
-                <div className="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold mb-4">
+                <div className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mb-4">
                   {option.id}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-green-800">{option.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-blue-800">{option.title}</h3>
                 <p className="text-gray-600">{option.description}</p>
               </motion.div>
             ))}
@@ -329,10 +329,10 @@ const GlobalFinance = () => {
       </section>
 
       {/* Teaching Strategies Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Effective Teaching Strategies for the Classroom</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Effective Teaching Strategies for the Classroom</h2>
             <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
               Our innovative approaches to financial education
             </p>
@@ -346,9 +346,9 @@ const GlobalFinance = () => {
                   whileHover={{ x: 5 }}
                   className="bg-white p-4 rounded-lg shadow flex items-start"
                 >
-                  <Lightbulb className="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-1" />
+                  <Lightbulb className="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="font-semibold text-green-800">{strategy.name}</h3>
+                    <h3 className="font-semibold text-blue-800">{strategy.name}</h3>
                     <p className="text-sm text-gray-600">{strategy.description}</p>
                   </div>
                 </motion.div>
@@ -370,7 +370,7 @@ const GlobalFinance = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-green-900">Our Online Library</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">Our Online Library</h2>
               <p className="text-gray-700 mb-6">
                 Students today hardly have the time to sit down and read a paperback novel. They read everything on their laptop or smartphone or any internet-enabled device. This is because everything is available online at the tap of a few buttons.
               </p>
@@ -387,12 +387,12 @@ const GlobalFinance = () => {
                 alt="Student using online library"
                 className="rounded-lg shadow-xl mb-6"
               />
-              <div className="bg-green-50 p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold mb-4 text-green-800">Library Benefits</h3>
+              <div className="bg-blue-50 p-6 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-4 text-blue-800">Library Benefits</h3>
                 <ul className="space-y-3">
                   {libraryBenefits.map((benefit, index) => (
                     <li key={index} className="flex items-start">
-                      <Check className="w-5 h-5 text-green-600 mr-2 flex-shrink-0 mt-1" />
+                      <Check className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-1" />
                       <span className="text-gray-700">{benefit}</span>
                     </li>
                   ))}
@@ -404,10 +404,10 @@ const GlobalFinance = () => {
       </section>
 
       {/* Student Success Stories Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-green-900">Our Students Success Story</h2>
+            <h2 className="text-3xl font-bold text-blue-900">Our Students Success Story</h2>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
               Passive earning with learning method for students
             </p>
@@ -429,7 +429,7 @@ const GlobalFinance = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white p-8 rounded-lg shadow-lg text-center"
               >
-                <h3 className="text-4xl font-bold text-green-600 mb-2">{stat.count}</h3>
+                <h3 className="text-4xl font-bold text-blue-600 mb-2">{stat.count}</h3>
                 <p className="text-xl text-gray-700">{stat.label}</p>
               </motion.div>
             ))}
@@ -440,20 +440,20 @@ const GlobalFinance = () => {
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-green-900 mb-6">Ready to Begin Your Journey in Global Finance?</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">Ready to Begin Your Journey in Global Finance?</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             Join our next cohort and gain the knowledge and skills needed to excel in the international financial landscape.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
             >
               Contact Us Today <ArrowRight className="ml-2" />
             </Link>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="inline-flex items-center px-6 py-3 border border-green-600 text-green-600 rounded-full hover:bg-green-50 transition-colors"
+              className="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-50 transition-colors"
             >
               Download Brochure <Download className="ml-2" />
             </button>

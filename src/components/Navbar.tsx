@@ -48,7 +48,7 @@ export default function Navbar() {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       scrolled
         ? 'bg-white/90 backdrop-blur-md shadow-lg'
-        : 'bg-gradient-to-r from-green-800 via-green-700 to-green-600'
+        : 'bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
@@ -67,7 +67,7 @@ export default function Navbar() {
                   />
                 <span
                   className={`text-2xl font-bold ${
-                    scrolled ? 'text-green-700' : 'text-white'
+                    scrolled ? 'text-blue-700' : 'text-white'
                   } transition-colors duration-300`}
                 >
                   Mahasamvit
@@ -83,7 +83,7 @@ export default function Navbar() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     className={`px-3 py-2 rounded-md text-sm font-medium ${
-                      scrolled ? 'text-black hover:text-green-700' : 'text-black hover:text-white'
+                      scrolled ? 'text-black hover:text-blue-700' : 'text-black hover:text-white'
                     } transition-colors duration-300`}
                   >
                     {item.label}
@@ -104,7 +104,7 @@ export default function Navbar() {
                         >
                           <Link
                             to={child.path}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700"
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
                           >
                             {child.label}
                           </Link>
@@ -123,10 +123,10 @@ export default function Navbar() {
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 ${
                       isActive(item.path)
                         ? scrolled
-                          ? 'text-green-700 border-b-2 border-green-700'
+                          ? 'text-blue-700 border-b-2 border-blue-700'
                           : 'text-black border-b-2 border-black'
                         : scrolled
-                          ? 'text-black hover:text-green-700'
+                          ? 'text-black hover:text-blue-700'
                           : 'text-black hover:text-white'
                     }`}
                   >
@@ -142,7 +142,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(!isOpen)}
               className={`p-2 rounded-md ${
-                scrolled ? 'text-black hover:text-green-700' : 'text-black hover:text-white'
+                scrolled ? 'text-black hover:text-blue-700' : 'text-black hover:text-white'
               }`}
             >
               <Menu size={24} />
@@ -164,7 +164,7 @@ export default function Navbar() {
               {navItems.map((item, index) => (
                 item.children ? (
                   <div key={index} className="space-y-1">
-                    <div className="px-3 py-2 text-green-700 font-medium border-b border-gray-100">
+                    <div className="px-3 py-2 text-blue-700 font-medium border-b border-gray-100">
                       {item.label}
                     </div>
                     {item.children.map((child, childIndex) => (
@@ -176,7 +176,7 @@ export default function Navbar() {
                       >
                         <Link
                           to={child.path}
-                          className="block px-3 py-2 text-sm text-gray-600 hover:bg-green-50 hover:text-green-700 pl-6"
+                          className="block px-3 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-700 pl-6"
                           onClick={() => setIsOpen(false)}
                         >
                           {child.label}
@@ -193,8 +193,8 @@ export default function Navbar() {
                   >
                     <Link
                       to={item.path}
-                      className={`block px-3 py-2 text-gray-700 hover:text-green-700 hover:bg-green-50 ${
-                        isActive(item.path) ? 'bg-green-50 text-green-700' : ''
+                      className={`block px-3 py-2 text-gray-700 hover:text-blue-700 hover:bg-blue-50 ${
+                        isActive(item.path) ? 'bg-blue-50 text-blue-700' : ''
                       }`}
                       onClick={() => setIsOpen(false)}
                     >

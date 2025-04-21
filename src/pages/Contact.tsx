@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-24 pb-24 bg-gradient-to-b from-green-50 to-white">
+    <div className="pt-24 pb-24 bg-gradient-to-b from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center"
@@ -53,7 +53,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
         >
           <div className="inline-block transition-transform duration-700 hover:scale-105">
-            <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-green-900">
+            <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-900">
               Get in Touch
             </h2>
           </div>
@@ -92,7 +92,7 @@ export default function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b border-green-100 pb-2">Send Us a Message</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b border-blue-100 pb-2">Send Us a Message</h3>
 
               {isSubmitted ? (
                 <motion.div
@@ -101,8 +101,8 @@ export default function Contact() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="rounded-full bg-green-100 p-3">
-                    <CheckCircle className="h-16 w-16 text-green-600" />
+                  <div className="rounded-full bg-blue-100 p-3">
+                    <CheckCircle className="h-16 w-16 text-blue-600" />
                   </div>
                   <h3 className="text-xl font-medium text-gray-900">Message Sent!</h3>
                   <p className="text-gray-600">Thank you for reaching out. We'll get back to you shortly.</p>
@@ -121,7 +121,7 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-700 focus:ring-green-700 bg-gray-50 p-2 outline-none"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 bg-gray-50 p-2 outline-none"
                       />
                     </div>
                     <div className="transition-all duration-300 hover:translate-y-1">
@@ -135,7 +135,7 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-700 focus:ring-green-700 bg-gray-50 p-2 outline-none"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 bg-gray-50 p-2 outline-none"
                       />
                     </div>
                   </div>
@@ -149,7 +149,7 @@ export default function Contact() {
                       id="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-700 focus:ring-green-700 bg-gray-50 p-2 outline-none"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 bg-gray-50 p-2 outline-none"
                     />
                   </div>
                   <div className="transition-all duration-300 hover:translate-y-1">
@@ -163,13 +163,13 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-700 focus:ring-green-700 bg-gray-50 p-2 outline-none"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-700 focus:ring-blue-700 bg-gray-50 p-2 outline-none"
                     />
                   </div>
                   <motion.button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-gradient-to-r from-green-700 to-green-800 hover:from-green-800 hover:to-green-900 transition-all duration-300 disabled:opacity-70"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900 transition-all duration-300 disabled:opacity-70"
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -187,14 +187,14 @@ export default function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b border-green-100 pb-2">Contact Information</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b border-blue-100 pb-2">Contact Information</h3>
               <div className="space-y-6">
                 <motion.div
                   className="flex items-start space-x-4 transition-all duration-300 hover:translate-x-1"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="rounded-full bg-green-100 p-2 flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-green-700" />
+                  <div className="rounded-full bg-blue-100 p-2 flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-blue-700" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900">Location</h3>
@@ -207,8 +207,8 @@ export default function Contact() {
                   className="flex items-start space-x-4 transition-all duration-300 hover:translate-x-1"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="rounded-full bg-green-100 p-2 flex-shrink-0">
-                    <Phone className="h-6 w-6 text-green-700" />
+                  <div className="rounded-full bg-blue-100 p-2 flex-shrink-0">
+                    <Phone className="h-6 w-6 text-blue-700" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900">Phone</h3>
@@ -221,8 +221,8 @@ export default function Contact() {
                   className="flex items-start space-x-4 transition-all duration-300 hover:translate-x-1"
                   whileHover={{ x: 5 }}
                 >
-                  <div className="rounded-full bg-green-100 p-2 flex-shrink-0">
-                    <Mail className="h-6 w-6 text-green-700" />
+                  <div className="rounded-full bg-blue-100 p-2 flex-shrink-0">
+                    <Mail className="h-6 w-6 text-blue-700" />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900">Email</h3>
@@ -243,7 +243,7 @@ export default function Contact() {
                       <motion.a
                         key={social.name}
                         href="#"
-                        className="text-gray-400 hover:text-green-700 transition-colors duration-300"
+                        className="text-gray-400 hover:text-blue-700 transition-colors duration-300"
                         whileHover={{ y: -3, scale: 1.1 }}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -262,7 +262,7 @@ export default function Contact() {
 
         {/* Call to Action Banner */}
         <motion.div
-          className="mt-16 bg-gradient-to-r from-green-700 to-green-800 rounded-xl shadow-xl p-8 text-white"
+          className="mt-16 bg-gradient-to-r from-blue-700 to-blue-800 rounded-xl shadow-xl p-8 text-white"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -270,12 +270,12 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="text-2xl font-bold">Ready to transform your financial future?</h3>
-              <p className="mt-2 text-green-100">Schedule a free consultation with our expert team today.</p>
+              <p className="mt-2 text-blue-100">Schedule a free consultation with our expert team today.</p>
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-white text-green-800 font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+              className="px-8 py-3 bg-white text-blue-800 font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
             >
               Book a Consultation
             </motion.button>
