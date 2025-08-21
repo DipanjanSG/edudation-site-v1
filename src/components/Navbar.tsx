@@ -41,6 +41,7 @@ export default function Navbar() {
       ]
     },
     { path: '/blogs', label: 'Blogs' },
+    { path: '/gallery', label: 'Gallery' },
     { path: '/contact', label: 'Contact' }
   ];
 
