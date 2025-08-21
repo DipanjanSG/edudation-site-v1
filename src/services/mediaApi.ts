@@ -61,12 +61,19 @@ export const getMediaUrl = (fileUrl: string): string => {
   if (fileUrl.startsWith('http')) {
     return fileUrl;
   }
-  const fullUrl = `${config.api.baseURL.replace('/api', '')}${fileUrl}`;
+  
+  // Parse the API base URL to get the server domain
+  const apiUrl = new URL(config.api.baseURL);
+  const serverBase = `${apiUrl.protocol}//${apiUrl.host}`;
+  
+  // Ensure proper URL construction
+  const fullUrl = `${serverBase}${fileUrl}`;
   
   // Debug logging in development
   if (import.meta.env.DEV) {
     console.log('Media URL constructed:', {
       original: fileUrl,
+      serverBase,
       full: fullUrl,
       baseURL: config.api.baseURL
     });
