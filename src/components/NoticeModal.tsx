@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, AlertTriangle, Info, Clock, User } from 'lucide-react';
 import { Notice, getNoticeImageUrl } from '../services/noticeApi';
+import { handleImageError } from '../utils/imageUtils';
 
 interface NoticeModalProps {
   notice: Notice;
@@ -163,59 +164,10 @@ export default function NoticeModal({ notice, isOpen, onClose }: NoticeModalProp
                      src={getNoticeImageUrl(notice.image)}
                      alt={notice.title}
                      className={`w-full h-64 object-cover rounded-lg shadow-md ${imageLoading || imageError ? 'hidden' : ''}`}
-                     crossOrigin="anonymous"
-                                           onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        console.error('Notice image failed to load:', {
-                          src: target.src,
-                          originalImage: notice.image,
-                          constructedUrl: getNoticeImageUrl(notice.image)
-                        });
-                        
+                     onError={(e) => {
+                        handleImageError(e);
                         setImageLoading(false);
                         setImageError(true);
-                        
-                        // Try to fetch the image with CORS mode
-                        fetch(target.src, {
-                          mode: 'cors',
-                          credentials: 'omit'
-                        })
-                          .then(response => {
-                            console.log('Image fetch response:', {
-                              status: response.status,
-                              statusText: response.statusText,
-                              headers: Object.fromEntries(response.headers.entries())
-                            });
-                            
-                            // If fetch succeeds, try to create object URL
-                            if (response.ok) {
-                              return response.blob();
-                            }
-                            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                          })
-                          .then(blob => {
-                            const objectUrl = URL.createObjectURL(blob);
-                            console.log('Created object URL:', objectUrl);
-                            
-                            // Try to load the image with object URL
-                            const img = new Image();
-                            img.onload = () => {
-                              target.src = objectUrl;
-                              target.style.display = 'block';
-                              setImageLoading(false);
-                              setImageError(false);
-                              console.log('Image loaded successfully with object URL');
-                            };
-                            img.onerror = () => {
-                              console.error('Failed to load image with object URL');
-                              setImageError(true);
-                            };
-                            img.src = objectUrl;
-                          })
-                          .catch(error => {
-                            console.error('Image fetch error:', error);
-                            setImageError(true);
-                          });
                       }}
                                            onLoad={() => {
                         setImageLoading(false);

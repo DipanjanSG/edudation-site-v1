@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { config, endpoints } from '../config/environment';
+import { createSafeImageUrl } from '../utils/imageUtils';
 
 // Media item interface
 export interface MediaItem {
@@ -58,33 +59,7 @@ const mediaApiClient = axios.create({
 
 // Get full media URL
 export const getMediaUrl = (fileUrl: string): string => {
-  if (fileUrl.startsWith('http')) {
-    return fileUrl;
-  }
-  
-  // In development, use relative URLs to avoid CORS issues
-  if (import.meta.env.DEV) {
-    return fileUrl;
-  }
-  
-  // Parse the API base URL to get the server domain
-  const apiUrl = new URL(config.api.baseURL);
-  const serverBase = `${apiUrl.protocol}//${apiUrl.host}`;
-  
-  // Ensure proper URL construction
-  const fullUrl = `${serverBase}${fileUrl}`;
-  
-  // Debug logging in development
-  if (import.meta.env.DEV) {
-    console.log('Media URL constructed:', {
-      original: fileUrl,
-      serverBase,
-      full: fullUrl,
-      baseURL: config.api.baseURL
-    });
-  }
-  
-  return fullUrl;
+  return createSafeImageUrl(fileUrl, config.api.baseURL);
 };
 
 // Get all media with pagination and filters

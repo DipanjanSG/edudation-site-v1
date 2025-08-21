@@ -156,7 +156,6 @@ export default function Gallery() {
                    className="w-full h-full object-cover"
                    muted
                    preload="metadata"
-                   crossOrigin="anonymous"
                    onError={(e) => {
                      console.error('Video thumbnail loading error:', e);
                    }}
@@ -212,7 +211,6 @@ export default function Gallery() {
                    className="w-full h-full object-cover"
                    muted
                    preload="metadata"
-                   crossOrigin="anonymous"
                    onError={(e) => {
                      console.error('Video thumbnail loading error:', e);
                    }}
@@ -523,7 +521,6 @@ export default function Gallery() {
                        controls
                        className="w-full h-auto max-h-[70vh]"
                        preload="metadata"
-                       crossOrigin="anonymous"
                        onLoadStart={() => {
                          console.log('Video loading started:', getMediaUrl(selectedMedia.fileUrl));
                          setVideoLoading(true);

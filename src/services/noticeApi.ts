@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { config, endpoints } from '../config/environment';
+import { createSafeImageUrl } from '../utils/imageUtils';
 
 // Notice interfaces
 export interface NoticeCreator {
@@ -43,33 +44,7 @@ const noticeApiClient = axios.create({
 
 // Get full notice image URL
 export const getNoticeImageUrl = (imageUrl: string): string => {
-  if (imageUrl.startsWith('http')) {
-    return imageUrl;
-  }
-  
-  // In development, use relative URLs to avoid CORS issues
-  if (import.meta.env.DEV) {
-    return imageUrl;
-  }
-  
-  // Parse the API base URL to get the server domain
-  const apiUrl = new URL(config.api.baseURL);
-  const serverBase = `${apiUrl.protocol}//${apiUrl.host}`;
-  
-  // Ensure proper URL construction
-  const fullUrl = `${serverBase}${imageUrl}`;
-  
-  // Debug logging in development
-  if (import.meta.env.DEV) {
-    console.log('Notice Image URL constructed:', {
-      original: imageUrl,
-      serverBase,
-      full: fullUrl,
-      baseURL: config.api.baseURL
-    });
-  }
-  
-  return fullUrl;
+  return createSafeImageUrl(imageUrl, config.api.baseURL);
 };
 
 // Get public notice
