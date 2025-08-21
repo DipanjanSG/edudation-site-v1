@@ -62,6 +62,11 @@ export const getMediaUrl = (fileUrl: string): string => {
     return fileUrl;
   }
   
+  // In development, use relative URLs to avoid CORS issues
+  if (import.meta.env.DEV) {
+    return fileUrl;
+  }
+  
   // Parse the API base URL to get the server domain
   const apiUrl = new URL(config.api.baseURL);
   const serverBase = `${apiUrl.protocol}//${apiUrl.host}`;

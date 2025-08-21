@@ -13,6 +13,13 @@ export default defineConfig({
     strictPort: true,
     hmr: {
       clientPort: 443
+    },
+    proxy: {
+      '/uploads': {
+        target: 'https://api.mahasamvit.com',
+        changeOrigin: true,
+        secure: true,
+      }
     }
   },
   base: '/',
