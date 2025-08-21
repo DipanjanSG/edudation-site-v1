@@ -47,11 +47,11 @@ export const getNoticeImageUrl = (imageUrl: string): string => {
     return imageUrl;
   }
   
-  // Remove /api from baseURL to get the server root
-  const serverBase = config.api.baseURL.replace('/api', '');
+  // Parse the API base URL to get the server domain
+  const apiUrl = new URL(config.api.baseURL);
+  const serverBase = `${apiUrl.protocol}//${apiUrl.host}`;
   
-  // Ensure proper URL construction without double slashes
-  // Since imageUrl already starts with '/', we can use it directly
+  // Ensure proper URL construction
   const fullUrl = `${serverBase}${imageUrl}`;
   
   // Debug logging in development
