@@ -1,11 +1,17 @@
 import { motion } from 'framer-motion';
 import { BookOpen, Award, Globe, BarChart, Users, Clock, ArrowRight, Check, Briefcase, BarChart2, HelpCircle, Lightbulb, Handshake, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState , useEffect, useLayoutEffect } from 'react';
 import BrochureModal from '../components/BrochureModal';
 
 const GlobalFinance = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+
+  // useLayoutEffect (
+  //   ()=> {
+  //   window.location.href = "http://localhost:5174/";
+  // } , []);
 
   // Core principles of IICF
   const corePrinciples = [

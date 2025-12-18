@@ -31,7 +31,7 @@ export default function Navbar() {
     {
       label: 'Services',
       children: [
-        { path: '/global-finance', label: 'Global Finance Education' },
+        { path: 'http://localhost:5174' ,label: 'Global Finance Education', isExternalLink : true},
         { path: '/financial-services', label: 'Financial Services' },
         { path: '/money-research', label: 'Money Research' },
         { path: '/business-consultancy', label: 'Business Consultancy' },
@@ -103,12 +103,22 @@ export default function Navbar() {
                           transition={{ duration: 0.2, delay: childIndex * 0.05 }}
                           viewport={{ once: true }}
                         >
-                          <Link
+
+                          {child.isExternalLink ?   
+                          
+                          (<a
+                            href={child.path}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                          >
+                            {child.label}
+                          </a>):
+                          (<Link
                             to={child.path}
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
                           >
                             {child.label}
-                          </Link>
+                          </Link>)
+                          }
                         </motion.div>
                       ))}
                     </div>
